@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS leads (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    company VARCHAR(100) NOT NULL,
+    industry VARCHAR(50) NOT NULL,
+    size INTEGER,
+    source VARCHAR(50) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS events (
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER NOT NULL,
+    action VARCHAR(100) NOT NULL,
+    metadata JSON,
+    occurred_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

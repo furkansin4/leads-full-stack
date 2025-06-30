@@ -1,0 +1,51 @@
+id,name,company,industry,size,source,created_at
+1,Mary Walker,"Walters, Hogan and Shelton",Healthcare,496,PPC,2025-05-31T14:19:48.918691Z
+2,Kelly Price,Graham-Todd,Manufacturing,379,PPC,2025-06-05T14:19:48.919107Z
+3,Valerie Medina,Ward-Holt,Finance,406,PPC,2025-06-25T14:19:48.919265Z
+4,Eric Donovan,Knapp-Baker,Finance,425,Organic,2025-06-22T14:19:48.919400Z
+5,Daniel Cervantes,"Ayala, Walker and Frank",Finance,301,Email,2025-06-03T14:19:48.919538Z
+6,Joshua Olson,"Crane, Ruiz and Tate",Manufacturing,386,Organic,2025-06-20T14:19:48.919707Z
+7,Bobby Melendez,Vaughan LLC,Technology,173,Referral,2025-06-14T14:19:48.919874Z
+8,Benjamin Wood,Hancock-Cooper,Healthcare,309,Email,2025-05-30T14:19:48.919973Z
+9,Jennifer Brown,Perkins PLC,Finance,67,Referral,2025-06-27T14:19:48.920106Z
+10,Nicholas Roach,Lynn-Ayala,Healthcare,157,Email,2025-06-05T14:19:48.920204Z
+11,Scott Hoffman,Mills-Taylor,Manufacturing,247,Email,2025-06-01T14:19:48.920335Z
+12,John Evans,Alexander-Mclaughlin,Healthcare,248,PPC,2025-05-28T14:19:48.920465Z
+13,Michael Clark,Trevino Ltd,Finance,37,Referral,2025-06-06T14:19:48.920595Z
+14,Kimberly Dennis,Smith LLC,Finance,348,Organic,2025-06-16T14:19:48.920698Z
+15,Jessica Sexton,Burton-Valdez,Healthcare,368,Email,2025-06-02T14:19:48.920794Z
+16,Mary Morse,"Guerrero, Schmidt and Jones",Healthcare,477,PPC,2025-06-08T14:19:48.920925Z
+17,Amanda Salinas,"Torres, Olson and Ramirez",Technology,256,PPC,2025-06-09T14:19:48.921092Z
+18,Todd Silva,Hutchinson-Todd,Manufacturing,447,Organic,2025-06-11T14:19:48.921258Z
+19,Donna Gardner,Riggs Group,Finance,69,Email,2025-06-20T14:19:48.921387Z
+20,Dr. Michael Jarvis,Schwartz-Vazquez,Technology,308,Email,2025-06-23T14:19:48.921483Z
+21,Daniel Stewart,"Davidson, Scott and Jones",Technology,219,Email,2025-06-10T14:19:48.921618Z
+22,Chelsea Cline,Brewer Inc,Technology,190,Organic,2025-06-11T14:19:48.921783Z
+23,William Joyce,Cook PLC,Technology,182,PPC,2025-06-13T14:19:48.921880Z
+24,Abigail Nguyen,Williams Inc,Healthcare,417,Email,2025-06-17T14:19:48.921974Z
+25,Rebecca Hines,Wallace LLC,Healthcare,466,Email,2025-06-16T14:19:48.922070Z
+26,Jennifer Smith,Adams and Sons,Technology,386,Email,2025-06-04T14:19:48.922168Z
+27,Ronald Miller,Donovan Inc,Healthcare,466,Referral,2025-06-08T14:19:48.922263Z
+28,Mark Hernandez,"Shelton, Joseph and Pena",Manufacturing,372,Organic,2025-06-16T14:19:48.922357Z
+29,Heidi Joyce,Cole-Allen,Manufacturing,177,PPC,2025-06-10T14:19:48.922523Z
+30,Erik Smith,"Hill, Larson and King",Manufacturing,345,Organic,2025-06-02T14:19:48.922652Z
+31,Jeffrey Cuevas,Mckenzie-Levine,Manufacturing,325,Referral,2025-05-31T14:19:48.922823Z
+32,Nicole Price,Anderson Ltd,Finance,250,Email,2025-06-22T14:19:48.922952Z
+33,Amy Garcia,Schwartz Inc,Manufacturing,169,Referral,2025-06-18T14:19:48.923047Z
+34,Daniel Lamb,Howell Group,Finance,409,PPC,2025-06-07T14:19:48.923143Z
+35,Jessica Todd,Rogers Group,Finance,65,PPC,2025-05-29T14:19:48.923236Z
+36,Paul Burgess,"Cox, Garcia and Bender",Finance,271,PPC,2025-06-13T14:19:48.923330Z
+37,Christopher Becker,"Phillips, Bolton and Robinson",Healthcare,427,PPC,2025-06-26T14:19:48.923491Z
+38,Todd Stone,"Kennedy, Ramos and Li",Finance,11,Email,2025-06-02T14:19:48.923654Z
+39,Kim Diaz,Washington Group,Finance,48,PPC,2025-06-25T14:19:48.923823Z
+40,Aaron Orozco,Mendoza Inc,Technology,344,Email,2025-06-12T14:19:48.923920Z
+41,Alexander Pena,Ramos Group,Healthcare,454,Referral,2025-06-05T14:19:48.924013Z
+42,Melissa Fowler,Anderson-Frank,Finance,318,Organic,2025-06-15T14:19:48.924106Z
+43,Steven Brown,Carney Ltd,Technology,107,Referral,2025-06-23T14:19:48.924234Z
+44,Lisa Scott,Bentley Group,Finance,234,Referral,2025-05-28T14:19:48.924327Z
+45,Sarah Garrett,Thomas Group,Technology,273,Email,2025-06-13T14:19:48.924421Z
+46,Ashley Taylor,Roberts PLC,Technology,345,PPC,2025-06-21T14:19:48.924515Z
+47,Katherine Moore,Evans Group,Manufacturing,279,PPC,2025-05-28T14:19:48.924609Z
+48,Jason Brandt,"Vargas, Spencer and Gonzalez",Technology,370,Email,2025-06-20T14:19:48.924703Z
+49,Anna Rosales,"Edwards, Smith and Stone",Healthcare,400,PPC,2025-06-24T14:19:48.924866Z
+50,Mason Parker MD,Hughes-Duncan,Manufacturing,95,Referral,2025-06-16T14:19:48.925033Z
