@@ -35,6 +35,15 @@ A full-stack application to help startup sales teams qualify and analyze demo-re
    ```bash
    pip install -r requirements.txt
    ```
+4. **Make sure Ollama is running:**
+   ```bash
+   ollama serve
+   ```
+
+5. **Generate LLM data (optional):**
+   ```bash
+   python data/llm_injection.py
+   ```
 
 ### Database Setup
 
