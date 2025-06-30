@@ -26,7 +26,7 @@ const App = () => {
       setLoading(true);
       const data = await get_leads(industry, minSize, maxSize);
       setLeads(data);
-      console.log(data);
+      //console.log(data);
     } catch (err) {
       setError('Failed to fetch leads');
       console.error('Error fetching leads:', err);
@@ -40,7 +40,7 @@ const App = () => {
 
   const changeUser = async () => {
     user_id += 1;
-    console.log(user_id);
+    //console.log(user_id);
   };
 
   const refreshLeads = async () => {
