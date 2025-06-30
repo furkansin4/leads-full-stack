@@ -41,6 +41,7 @@ A full-stack application to help startup sales teams qualify and analyze demo-re
 4. **Create PostgreSQL database:**
    ```bash
    createdb {database_name}
+   psql  -d {database_name}
    ```
    > Replace `{database_name}` with your preferred database name
 
@@ -48,6 +49,7 @@ A full-stack application to help startup sales teams qualify and analyze demo-re
    ```bash
    psql {database_name}
    \i db.sql
+   \i insert_llm_columns.sql
    \q
    ```
 
@@ -115,3 +117,44 @@ GROUP BY view;
 |-------|-------|
 | chart | 50.00 |
 | table | 50.00 |
+
+
+## 🤖 LLM Integration (Optional)
+
+Use an LLM (llama3.2:3b via ollama) to enrich each lead on fetch:
+
+### Company Summary Generation
+- **Prompt:**
+  ```
+  generate 1 sentence detailed text summary for company according to this data. 
+  Just give an answer: company: {company}, industry: {industry}
+### Lead Quality Classification
+- **Prompt:** 
+  ```
+  classify lead quality (High/Medium/Low) based on industry and size. 
+  Respond with only one word: High, Medium, or Low. 
+  size: {size}, industry: {industry}
+  ```
+
+
+  ```
+
+### Implementation Details
+The LLM integration is implemented using Ollama with the `llama3.2:3b` model in `data/llm_injection.py`. This script processes the leads CSV file and adds two new columns:
+- `lead_quality`: AI-generated quality classification
+- `summary`: AI-generated company summary
+
+Example enriched payload:
+```json
+{
+  "id": 1,
+  "company": "Walters, Hogan and Shelton",
+  "industry": "Healthcare",
+  "size": "496",
+  "lead_quality": "Low",
+  "summary": "Walters, Hogan and Shelton is a healthcare company that likely specializes in providing medical staffing services, consulting, or solutions tailored to the needs of hospitals, clinics, and other healthcare organizations."
+}
+```
+### At a Glance
+
+![Updated Table View](app.png)

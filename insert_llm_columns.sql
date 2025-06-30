@@ -1,0 +1,2 @@
+ALTER TABLE leads ADD COLUMN summary TEXT;
+ALTER TABLE leads ADD COLUMN lead_quality VARCHAR(20);

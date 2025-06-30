@@ -29,7 +29,8 @@ def load_csv(path):
 
     print(f"Successfully loaded!")
 
-load_csv("data/leads.csv")
+#load_csv("data/leads.csv")
+load_csv("data/new_leads.csv")
 
 app = FastAPI()
 
@@ -88,6 +89,8 @@ async def get_leads(industry: Optional[str] = Query(None, description="Filter by
                     "industry": row.industry,
                     "size": row.size,
                     "source": row.source,
+                    "summary": row.summary,
+                    "lead_quality": row.lead_quality,
                     "created_at": str(row.created_at)
                 }
                 leads.append(lead)

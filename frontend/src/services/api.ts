@@ -13,6 +13,8 @@ export interface Lead {
     size: number;
     source: string;
     created_at: string;
+    summary: string;
+    lead_quality: string;
 }
 
 export interface EventData {

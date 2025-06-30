@@ -287,6 +287,8 @@ const App = () => {
           <Column field="industry" header="Industry" sortable style={{ width: '15%' }} />
           <Column field="size" header="Size" sortable style={{ width: '10%' }} />
           <Column field="source" header="Source" sortable style={{ width: '15%' }} />
+          <Column field="summary" header="Summary" sortable style={{ width: '20%' }} />
+          <Column field="lead_quality" header="Lead Quality" sortable style={{ width: '10%' }} />
           <Column 
             field="created_at" 
             header="Created At" 
