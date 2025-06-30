@@ -43,7 +43,7 @@ A full-stack application to help startup sales teams qualify and analyze demo-re
    createdb {database_name}
    psql  -d {database_name}
    ```
-   > Replace `{database_name}` with your preferred database name
+   > Replace `{database_name}` with your database name
 
 5. **Set up database schema:**
    ```bash
@@ -128,6 +128,7 @@ Use an LLM (llama3.2:3b via ollama) to enrich each lead on fetch:
   ```
   generate 1 sentence detailed text summary for company according to this data. 
   Just give an answer: company: {company}, industry: {industry}
+
 ### Lead Quality Classification
 - **Prompt:** 
   ```
@@ -136,8 +137,6 @@ Use an LLM (llama3.2:3b via ollama) to enrich each lead on fetch:
   size: {size}, industry: {industry}
   ```
 
-
-  ```
 
 ### Implementation Details
 The LLM integration is implemented using Ollama with the `llama3.2:3b` model in `data/llm_injection.py`. This script processes the leads CSV file and adds two new columns:
@@ -156,5 +155,13 @@ Example enriched payload:
 }
 ```
 ### At a Glance
+
+Here's a quick overview of the web app:
+
+- **Data Visualization**: Switch between table and chart views to analyze leads
+- **Filtering**: Filter leads by industry, source, company size, and date ranges
+- **AI-Enhanced Data**: Each lead includes AI-generated summaries and quality classifications
+- **Real-time Analytics**: Track user interactions and view preferences
+- **Responsive Design**: Clean, modern interface built with React and PrimeReact
 
 ![Updated Table View](app.png)
