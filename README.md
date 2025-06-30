@@ -77,3 +77,40 @@ python backend/app.py
 cd frontend
 npm run dev
 ```
+
+## Analytics Queries
+
+### 1. Top 3 filters used in the last 7 days:
+
+```sql
+SELECT metadata->>'filterType' AS filter,
+       COUNT(*) AS uses
+FROM events
+WHERE action = 'filter'
+	AND occurred_at >= NOW() - INTERVAL '7 days'
+GROUP BY filter
+ORDER BY uses DESC
+LIMIT 3;
+```
+
+**Results:**
+| filter   | uses |
+|----------|------|
+| [null]   | 4    |
+| industry | 3    |
+
+### 2. Bar preference overall:
+
+```sql
+SELECT metadata->>'view' AS view,
+       ROUND(100.0 * COUNT(*) / (SELECT COUNT(*) FROM events WHERE action = 'toggle_view'), 2) AS pct
+FROM events
+WHERE action = 'toggle_view'
+GROUP BY view;
+```
+
+**Results:**
+| view  | pct   |
+|-------|-------|
+| chart | 50.00 |
+| table | 50.00 |
