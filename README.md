@@ -83,7 +83,7 @@ npm run dev
 ### 1. Top 3 filters used in the last 7 days:
 
 ```sql
-SELECT metadata->>'filterType' AS filter,
+SELECT metadata->>'filter_type' AS filter,
        COUNT(*) AS uses
 FROM events
 WHERE action = 'filter'
@@ -94,10 +94,11 @@ LIMIT 3;
 ```
 
 **Results:**
-| filter   | uses |
-|----------|------|
-| [null]   | 4    |
-| industry | 3    |
+| filter     | uses |
+|------------|------|
+| size_range | 82   |
+| industry   | 34   |
+| null       | 5    |
 
 ### 2. Bar preference overall:
 
